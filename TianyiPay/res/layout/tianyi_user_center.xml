@@ -1,0 +1,641 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_horizontal|center_vertical"
+    android:background="@color/tianyi_background_activity"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/tianyi_titlebar_height_50dp"
+        android:background="@color/tianyi_background_activity_title" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:id="@+id/goback"
+                android:layout_width="@dimen/tianyi_titlebar_height_50dp"
+                android:layout_height="@dimen/tianyi_titlebar_height_50dp"
+                android:background="@null"
+                android:src="@drawable/tianyi_title_bar_back"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxEms="10"
+                android:singleLine="true"
+                android:text="@string/tianyi_user_center"
+                android:textColor="@color/tianyi_text_activity_title"
+                android:textSize="@dimen/tianyi_text_activity_title" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0.0dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+			
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/tianyi_background_module_title"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:background="@null"
+                        android:src="@drawable/tianyi_accounticon"/>
+                </LinearLayout>
+                
+                <LinearLayout
+                    style="@style/tianyi_item_margin"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/tianyi_text_module_item_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tianyi_payment_account" >
+                    </TextView>
+                </LinearLayout>
+            </LinearLayout>
+            
+            <LinearLayout
+                style="@style/tianyi_layout_firstlevel_margin"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:orientation="vertical" >
+
+				<LinearLayout
+				    style="@style/tianyi_item_margin"
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content"
+				    android:layout_marginBottom="0dp"
+				    android:layout_marginLeft="0dp"
+				    android:layout_marginRight="0dp"
+				    android:layout_marginTop="0dp"
+				    android:gravity="center_vertical"
+				    android:orientation="horizontal"
+				    android:paddingBottom="15dp"
+				    android:paddingLeft="20dp"
+				    android:paddingRight="20dp"
+				    android:paddingTop="15dp" >
+
+                    <TextView
+                        style="@style/tianyi_text_module_item_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tianyi_current_account_name" >
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/payment_center_username"
+                        style="@style/tianyi_text_module_item_value"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:singleLine="true">
+
+                    </TextView>
+
+                </LinearLayout>
+                <include layout="@layout/tianyi_row_divider"/>
+
+                <LinearLayout
+                    style="@style/tianyi_item_margin"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="0dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="15dp" >
+
+                    <TextView
+                        style="@style/tianyi_text_module_item_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tianyi_current_bind_phone" >
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/payment_center_bindedphone"
+                        style="@style/tianyi_text_module_item_value"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:nextFocusDown="@+id/nd3_account_login_password"
+                        android:singleLine="true"
+                        android:text="@string/tianyi_usercenter_bindphonetips" >
+
+                    </TextView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:background="@color/tianyi_background_module_title"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:background="@null"
+                        android:src="@drawable/tianyi_registericon"/>
+                </LinearLayout>
+                
+                <LinearLayout
+                    style="@style/tianyi_item_margin"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/tianyi_text_module_item_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tianyi_usercenter_register" >
+                    </TextView>
+                </LinearLayout>
+            </LinearLayout>
+            
+            <LinearLayout
+                style="@style/tianyi_layout_firstlevel_margin"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/payment_center_registernew"
+                    style="@style/tianyi_item_margin"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/tianyi_list_row"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="15dp" >
+
+                    <TextView
+                        style="@style/tianyi_text_module_item_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tianyi_register_new_account" />
+
+                    <TextView
+                        style="@style/tianyi_text_module_item_value"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:nextFocusDown="@+id/nd3_account_login_password"
+                        android:singleLine="true" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:paddingLeft="@dimen/tianyi_margin_5dp"
+                        android:paddingRight="@dimen/tianyi_margin_5dp"
+                        android:src="@drawable/tianyi_arrow_right"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <include layout="@layout/tianyi_row_divider"/>
+				
+                <LinearLayout
+                    android:id="@+id/payment_center_relogin"
+                    style="@style/tianyi_item_margin"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/tianyi_list_row"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="15dp" >
+
+                    <TextView
+                        style="@style/tianyi_text_module_item_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tianyi_relogin" />
+
+                    <TextView
+                        style="@style/tianyi_edittext_style"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:nextFocusDown="@+id/nd3_account_login_password"
+                        android:singleLine="true" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:paddingLeft="@dimen/tianyi_margin_5dp"
+                        android:paddingRight="@dimen/tianyi_margin_5dp"
+                        android:src="@drawable/tianyi_arrow_right"
+                        android:visibility="visible" />
+                </LinearLayout>
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/tianyi_background_module_title"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:background="@null"
+                        android:src="@drawable/tianyi_securityicon"/>
+                </LinearLayout>
+                
+                <LinearLayout
+                    style="@style/tianyi_item_margin"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/tianyi_text_module_item_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tianyi_usercenter_security" >
+                    </TextView>
+                </LinearLayout>
+            </LinearLayout>
+            
+            <LinearLayout
+                style="@style/tianyi_layout_firstlevel_margin"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/payment_center_bindphone"
+                    style="@style/tianyi_item_margin"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/tianyi_list_row"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="15dp" >
+
+                    <TextView
+                        style="@style/tianyi_text_module_item_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tianyi_bind_phone" />
+
+                    <TextView
+                        style="@style/tianyi_edittext_style"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:nextFocusDown="@+id/nd3_account_login_password"
+                        android:singleLine="true" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:paddingLeft="@dimen/tianyi_margin_5dp"
+                        android:paddingRight="@dimen/tianyi_margin_5dp"
+                        android:src="@drawable/tianyi_arrow_right"
+                        android:visibility="visible" />
+                </LinearLayout>
+				
+                <LinearLayout
+                    android:id="@+id/payment_center_unbindphone"
+                    style="@style/tianyi_item_margin"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/tianyi_list_row"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="15dp" >
+
+                    <TextView
+                        style="@style/tianyi_text_module_item_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tianyi_unbind_phone" />
+
+                    <TextView
+                        style="@style/tianyi_edittext_style"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:nextFocusDown="@+id/nd3_account_login_password"
+                        android:singleLine="true" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:paddingLeft="@dimen/tianyi_margin_5dp"
+                        android:paddingRight="@dimen/tianyi_margin_5dp"
+                        android:src="@drawable/tianyi_arrow_right"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <include layout="@layout/tianyi_row_divider"/>
+                
+                <LinearLayout
+                    android:id="@+id/payment_center_changepassword"
+                    style="@style/tianyi_item_margin"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/tianyi_list_row"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="15dp" >
+
+                    <TextView
+                        style="@style/tianyi_text_module_item_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tianyi_change_password" />
+
+                    <TextView
+                        style="@style/tianyi_edittext_style"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:nextFocusDown="@+id/nd3_account_login_password"
+                        android:singleLine="true" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:paddingLeft="@dimen/tianyi_margin_5dp"
+                        android:paddingRight="@dimen/tianyi_margin_5dp"
+                        android:src="@drawable/tianyi_arrow_right"
+                        android:visibility="visible" />
+                </LinearLayout>
+                
+                <include layout="@layout/tianyi_row_divider"  android:id="@+id/line_for_reset"/>
+                
+                <LinearLayout
+                    android:id="@+id/payment_center_resetpassword"
+                    style="@style/tianyi_item_margin"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/tianyi_list_row"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="15dp" >
+
+                    <TextView
+                        style="@style/tianyi_text_module_item_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tianyi_reset_password" />
+
+                    <TextView
+                        style="@style/tianyi_edittext_style"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:nextFocusDown="@+id/nd3_account_login_password"
+                        android:singleLine="true" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:paddingLeft="@dimen/tianyi_margin_5dp"
+                        android:paddingRight="@dimen/tianyi_margin_5dp"
+                        android:src="@drawable/tianyi_arrow_right"
+                        android:visibility="visible" />
+                </LinearLayout>
+            </LinearLayout>
+
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="0dp"
+    android:layout_marginTop="0dp"
+    android:background="@color/tianyi_background_module_title"
+    android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:background="@null"
+                        android:src="@drawable/tianyi_payicon"/>
+                </LinearLayout>
+                
+                <LinearLayout
+                    style="@style/tianyi_item_margin"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/tianyi_text_module_item_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tianyi_usercenter_historypay" >
+                    </TextView>
+                </LinearLayout>
+            </LinearLayout>
+            
+			<LinearLayout
+			    style="@style/tianyi_layout_firstlevel_margin"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_marginBottom="0dp"
+			    android:layout_marginLeft="0dp"
+			    android:layout_marginRight="0dp"
+			    android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/payment_center_history"
+                    style="@style/tianyi_item_margin"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/tianyi_list_row"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="15dp" >
+
+                    <TextView
+                        style="@style/tianyi_text_module_item_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tianyi_payment_history" />
+
+                    <TextView
+                        style="@style/tianyi_edittext_style"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:nextFocusDown="@+id/nd3_account_login_password"
+                        android:singleLine="true" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:paddingLeft="@dimen/tianyi_margin_5dp"
+                        android:paddingRight="@dimen/tianyi_margin_5dp"
+                        android:src="@drawable/tianyi_arrow_right"
+                        android:visibility="visible" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

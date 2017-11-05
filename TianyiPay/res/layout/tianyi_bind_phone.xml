@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_horizontal|center_vertical"
+    android:background="@color/tianyi_background_activity"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/tianyi_titlebar_height_50dp"
+        android:background="@color/tianyi_background_activity_title" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:id="@+id/goback"
+                android:layout_width="@dimen/tianyi_titlebar_height_50dp"
+                android:layout_height="@dimen/tianyi_titlebar_height_50dp"
+                android:background="@null"
+                android:src="@drawable/tianyi_title_bar_back"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxEms="10"
+                android:singleLine="true"
+                android:text="@string/tianyi_bindphone"
+                android:textColor="@color/tianyi_text_activity_title"
+                android:textSize="@dimen/tianyi_text_activity_title" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fadingEdge="none"
+        android:fillViewport="true"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0.0dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                style="@style/tianyi_text_tips_value"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/tianyi_margin_5dp"
+                android:layout_marginLeft="@dimen/tianyi_margin_lr_20dp"
+                android:layout_marginRight="@dimen/tianyi_margin_lr_20dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/tianyi_text_tips_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tianyi_account_bind_tips" >
+                </TextView>
+            </LinearLayout>
+
+            <!-- 输入绑定的手机号 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="@dimen/tianyi_margin_lr_20dp"
+                android:layout_marginRight="@dimen/tianyi_margin_lr_20dp"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/nd_bind_group_code"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp" >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.5"
+                        android:orientation="vertical" >
+
+                        <!-- 提示 -->
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:text="@string/tianyi_bind_phone_number_enter_number_tip"
+                            style="@style/tianyi_text_module_item_name">
+                        </TextView>
+
+                        <!-- 编辑框 -->
+
+                        <EditText
+                            android:id="@+id/tianyi_bind_phone_number_editext"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/tianyi_margin_5dp"
+                            android:background="@drawable/tianyi_editbox_background"
+                            android:inputType="phone"
+                            android:singleLine="true"
+                            style="@style/tianyi_edittext_style">
+                        </EditText>
+                    </LinearLayout>
+
+                    <!-- 和 -->
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="0.4"
+                        android:gravity="bottom"
+                        android:orientation="vertical" >
+
+                        <Button
+                            android:id="@+id/tianyi_reset_getcode_button"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            style="@style/tianyi_text_module_item_name"
+                            android:layout_gravity="right"
+                            android:background="@drawable/tianyi_btn_getcode"
+                            android:text="@string/tianyi_bind_phone_number_gain_code"
+                            android:textColor="@color/tianyi_font_color" />
+                    </LinearLayout>
+                </LinearLayout>
+                <!-- 请输入收到的短信验证码 -->
+
+                <LinearLayout
+                    android:id="@+id/nd_bind_phone_number_bind_group_phone_number"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/tianyi_10dp"
+                    android:orientation="vertical" >
+
+                    <!-- 提示 -->
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="@string/tianyi_bind_phone_number_enter_code_tip"
+                        style="@style/tianyi_text_module_item_name" >
+                    </TextView>
+                    <!-- 编辑框 -->
+
+                    <EditText
+                        android:id="@+id/tianyi_bind_code_edit"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.0dip"
+                        android:layout_marginTop="@dimen/tianyi_margin_5dp"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/tianyi_editbox_background"
+                        android:singleLine="true"
+                        style="@style/tianyi_edittext_style"/>
+                </LinearLayout>
+                <!-- 绑定手机 -->
+
+                <Button
+                    android:id="@+id/tianyi_bind_phone_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/tianyi_margin_lr_20dp"
+                    android:background="@drawable/tianyi_btn_ok"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/tianyi_bind_phone_number_bind"
+                    android:textColor="@color/tianyi_white"
+                    android:textSize="@dimen/tianyi_pay_tip_text_size_16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/tianyi_bind_phone_reason"
+                    style="@style/tianyi_text_tips_title"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tianyi_bind_phone_reason1"
+                    style="@style/tianyi_text_tips_value" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tianyi_bind_phone_reason2"
+                    style="@style/tianyi_text_tips_value" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

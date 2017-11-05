@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="tianyi_font_color_cancelbuttontext">#ff000000</color>
+    <color name="tianyi_font_color_recorditemtext">#ff41434a</color>
+    <color name="tianyi_font_color_findps">#ffff8a00</color>
+    <color name="tianyi_font_color_10">#ff797f8c</color>
+    <color name="tianyi_font_color">#333333</color> 
+    <color name="tianyi_white">#FFFFFF</color>
+    <color name="tianyi_transparent">#00000000</color>
+    
+    <color name="tianyi_text_activity_title">#ffffff</color>
+    <color name="tianyi_text_module_title">#888888</color>
+    <color name="tianyi_text_module_item_name">#333333</color>
+    <color name="tianyi_text_module_item_value">#b2b2b2</color>
+    <color name="tianyi_text_tips">#888888</color>
+    <color name="tianyi_text_button_normal">#ffffff</color>
+
+    <color name="tianyi_background_activity_title">#ff9c00</color>
+    <color name="tianyi_background_activity">#f0f0f0</color>
+    <color name="tianyi_background_module_press_down">#e2e2ea</color>
+    <color name="tianyi_background_module_title">#d2d2d2</color>
+    
+    <color name="tianyi_background_divider">#bbbbbb</color>
+</resources>

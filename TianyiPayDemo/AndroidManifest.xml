@@ -1,0 +1,19 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tianyipaydemo"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="13"/>
+  
+    <application android:label="@string/tianyi_application_name" android:icon="@drawable/tianyi_payicon" android:allowBackup="false">
+        <meta-data android:name="TianyiAppId" android:value="GT001"/>
+        <meta-data android:name="TianyiChannelId" android:value="GTP_1000"/>
+        <activity android:name="com.tianyidemo.MainActivity" android:screenOrientation="landscape" android:configChanges="orientation|keyboardHidden|screenSize" android:theme="@android:style/Theme.Light.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

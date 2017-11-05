@@ -1,0 +1,80 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tianyipaylib"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+   	  <uses-permission android:name="android.permission.INTERNET"/>
+	  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	  <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+	  <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+	  <uses-permission android:name="android.permission.CALL_PHONE"/>  
+	  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+      <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+      <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+      <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+      <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+	  
+      <uses-permission android:name="android.permission.INTERNET" />
+      <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+	    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+	    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+	    <uses-permission android:name="org.simalliance.openmobileapi.SMARTCARD" />
+	    <uses-permission android:name="android.permission.NFC" />
+	    <uses-feature android:name="android.hardware.nfc.hce"/>
+	    <!--如果选择智能卡方式(即sdkPro)集成，需要额外定义以下权限-->
+	    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+	    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+	    
+	    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.webkit.permission.PLUGIN" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    
+    <application>
+        <activity android:name="com.tianyi.ui.TianyiPaymentCenterActivity" android:screenOrientation="landscape" 
+android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:name="com.tianyi.ui.TianyiUserCenter" android:screenOrientation="landscape" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:name="com.tianyi.ui.TianyiBindphoneActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:name="com.tianyi.ui.TianyiUnBindphoneActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:name="com.tianyi.ui.TianyiChangePasswordActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:name="com.tianyi.ui.TianyiLoginActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:name="com.tianyi.ui.TianyiPaymentHistoryActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:name="com.tianyi.ui.TianyiRegisterActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:name="com.tianyi.ui.TianyiResetPasswordActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:name="com.tianyi.ui.TianyiCardpayActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:name="com.tianyi.floatview.CustomerActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:name="com.tianyi.floatview.WebViewActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity
+            android:name="com.tianyi.uppay.ActivityProxy"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.unionpay.uppay.PayActivity"
+            android:screenOrientation="landscape"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:excludeFromRecents="true"
+            android:windowSoftInputMode="adjustResize">
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        
+        <activity
+            android:name="com.ipaynow.wechatpay.plugin.inner_plugin.wechat_plugin.activity.WeChatNotifyActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="behind"
+            android:theme="@android:style/Theme.Translucent" >
+        </activity>
+    </application>
+	<uses-sdk android:minSdkVersion="13"/>
+</manifest>

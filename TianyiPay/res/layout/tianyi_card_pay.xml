@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_horizontal|center_vertical"
+    android:background="@color/tianyi_background_activity"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/tianyi_titlebar_height_50dp"
+        android:background="@color/tianyi_background_activity_title" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:id="@+id/goback"
+                android:layout_width="@dimen/tianyi_titlebar_height_50dp"
+                android:layout_height="@dimen/tianyi_titlebar_height_50dp"
+                android:background="@null"
+                android:src="@drawable/tianyi_title_bar_back"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/cardname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxEms="10"
+                android:singleLine="true"
+                android:text="@string/tianyi_card_pay_title"
+                android:textColor="@color/tianyi_text_activity_title"
+                android:textSize="@dimen/tianyi_text_activity_title" />
+        </LinearLayout>
+    </RelativeLayout>
+	
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fadingEdge="none"
+        android:fillViewport="true"
+        android:scrollbars="none" >
+
+        <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="0.0dip"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            style="@style/tianyi_item_margin"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tianyi_card_pay_tips"
+                style="@style/tianyi_text_cardpay_tips_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tianyi_card_pay_tips" >
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/tianyi_margin_5dp"
+            android:layout_marginTop="@dimen/tianyi_margin_5dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                style="@style/tianyi_item_margin"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/tianyi_text_module_item_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tianyi_card_amount" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/card_amount"
+                    style="@style/tianyi_edittext_style"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:singleLine="true" >
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/tianyi_item_margin"
+                android:layout_marginTop="20dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/tianyi_text_module_item_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tianyi_card_number" >
+                </TextView>
+
+                <EditText
+                    android:id="@+id/card_number"
+                    style="@style/tianyi_edittext_style"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/tianyi_editbox_background"
+                    android:imeOptions="actionDone"
+                    android:singleLine="true" >
+
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/tianyi_item_margin"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/tianyi_text_module_item_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tianyi_card_password" >
+                </TextView>
+
+                <EditText
+                    android:id="@+id/card_password"
+                    style="@style/tianyi_edittext_style"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/tianyi_editbox_background"
+                    android:imeOptions="actionDone"
+                    android:singleLine="true" >
+
+                </EditText>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dip"
+            android:layout_marginLeft="@dimen/tianyi_margin_lr_20dp"
+            android:layout_marginRight="@dimen/tianyi_margin_lr_20dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="visible" >
+
+            <Button
+                android:id="@+id/tianyi_card_pay_cancel"
+                style="@style/tianyi_text_module_item_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0.0dp"
+                android:layout_marginRight="5dip"
+                android:layout_weight="1"
+                android:background="@drawable/tianyi_btn_getcode"
+                android:text="@string/tianyi_button_cancel"
+                android:textColor="@color/tianyi_font_color_cancelbuttontext" >
+            </Button>
+
+            <Button
+                android:id="@+id/tianyi_card_pay_ok"
+                style="@style/tianyi_text_module_item_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="0.0dip"
+                android:layout_marginLeft="5dip"
+                android:layout_weight="1"
+                android:background="@drawable/tianyi_btn_ok"
+                android:text="@string/tianyi_button_submit"
+                android:textColor="@color/tianyi_white" >
+            </Button>
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

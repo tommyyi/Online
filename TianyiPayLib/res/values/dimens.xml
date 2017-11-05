@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="tianyi_titlebar_height_50dp">50.0dip</dimen>
+    <dimen name="tianyi_loading_dialog_height_30dp">30.0dip</dimen>
+    <dimen name="tianyi_font_size_activity_title_18sp">18.0sp</dimen>
+    <dimen name="tianyi_font_size_14sp">14.0sp</dimen>
+    <dimen name="tianyi_divider_width">1.0px</dimen>
+    <dimen name="tianyi_font_size_16sp">16.0sp</dimen>
+    <dimen name="tianyi_font_size_12sp">12.0sp</dimen>
+    <dimen name="tianyi_margin_15dp">15dip</dimen>
+    <dimen name="tianyi_margin_5dp">5dip</dimen>
+    <dimen name="tianyi_portrait_add_text_size_14sp">14sp</dimen>
+    <dimen name="tianyi_register_agreement_text_size_16sp">16sp</dimen>
+    <dimen name="tianyi_option_item_marginLeft_10dp">10dip</dimen> 
+    
+    <dimen name="tianyi_margin_lr_20dp">20dip</dimen> 
+    <dimen name="tianyi_10dp">10dip</dimen> 
+    <dimen name="tianyi_pay_tip_text_size_16sp">16sp</dimen>  
+    
+    <dimen name="tianyi_text_activity_title">18.0sp</dimen>
+    <dimen name="tianyi_text_module_title">16sp</dimen>
+    <dimen name="tianyi_text_module_item_name">16sp</dimen>
+    <dimen name="tianyi_text_module_item_value">16sp</dimen>
+    <dimen name="tianyi_text_tips">16sp</dimen>
+    <dimen name="tianyi_text_tips_title">20sp</dimen>
+    <dimen name="tianyi_text_button_normal">16sp</dimen>
+    
+    <dimen name="tianyi_background_divider">1.0px</dimen>
+</resources>

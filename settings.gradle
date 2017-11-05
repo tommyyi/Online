@@ -1,0 +1,14 @@
+include ':Alipay'
+project(':Alipay').projectDir = new File('D:/CODE/Online/Alipay')
+include ':UPPay'
+project(':UPPay').projectDir = new File('D:/CODE/Online/UPPay')
+include ':WeiXinPay'
+project(':WeiXinPay').projectDir = new File('D:\\CODE\\Online\\WeChatPay')
+include ':TianyiPay'
+project(':TianyiPay').projectDir = new File('D:/CODE/Online/TianyiPay')
+include ':TianyiPayLib'
+project(':TianyiPayLib').projectDir = new File('D:/CODE/Online/TianyiPayLib')
+include ':TianyiPayDemo'
+project(':TianyiPayDemo').projectDir = new File('D:/CODE/Online/TianyiPayDemo')
+include ':TianyiPayDoc'
+project(':TianyiPayDoc').projectDir = new File('D:/CODE/Online/TianyiPayDoc')

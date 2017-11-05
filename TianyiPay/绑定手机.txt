@@ -1,0 +1,72 @@
+GET /openapi/index.php?r=user/binding&s=%2FADM3H1%2Bgmvd%2Bp4HXqZhSFziO%2FYjBhdkY%2FmELVgfu6BLIalb10T7qi%2BccBjo+CpPgLZyVTW7IZ5Y0l40ykGhvWHmt%2BLRuN%2F1BcKYvSDFeEGHcA0QkjEGmJ4z%2B+lrJi76VmEJQZ1ise44iFc4FXFLZy0sfVDLGC4cA%2BF0fb0ps46yQ%3D&resetkey=617229&value=13724301395&access_token=GT001.GTP_1000.DF_35967.faa08a88f62a9c99f975d6dafb5d1ba7b91de36a HTTP/1.1
+Host: 103.20.248.170
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/UNAVAILABLE (java 1.4)
+Cookie: PHPSESSID=96fmo8k91gt4pcga9r4i4gl996
+Cookie2: $Version=1
+
+HTTP/1.1 200 OK
+Server: nginx
+Date: Wed, 20 Jan 2016 06:34:58 GMT
+Content-Type: text/html
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+X-Powered-By: PHP/5.3.29
+Access-Control-Allow-Origin: *
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+
+94
+{"code":219,"message":"\u7ed1\u5b9a\u5931\u8d25\uff0c\"13724301395\"\u5df2\u7ecf\u88ab\u7ed1\u5b9a\uff0c\u8bf7\u66f4\u6362\u4e00\u4e2a\u518d\u8bd5"}
+0
+
+GET /openapi/index.php?r=user/resetkey&s=%2FADM3H1%2Bgmvd%2Bp4HXqZhSFziO%2FYjBhdkY%2FmELVgfu6BLIalb10T7qi%2BccBjo+CpPgLZyVTW7IZ5Y0l40ykGhvWHmt%2BLRuN%2F1BcKYvSDFeEGHcA0QkjEGmJ4z%2B+lrJi76VmEJQZ1ise44iFc4FXFLZy0sfVDLGC4cA%2BF0fb0ps46yQ%3D&value=13724301395&type=PHONE&access_token=GT001.GTP_1000.DF_36089.53f5bcabd5799d4c3b58b3a3c0d97b76f41d8025 HTTP/1.1
+Host: 103.20.248.170
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/UNAVAILABLE (java 1.4)
+Cookie: PHPSESSID=96fmo8k91gt4pcga9r4i4gl996
+Cookie2: $Version=1
+
+HTTP/1.1 200 OK
+Server: nginx
+Date: Wed, 20 Jan 2016 08:21:04 GMT
+Content-Type: text/html
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+X-Powered-By: PHP/5.3.29
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Access-Control-Allow-Origin: *
+
+ee
+{"code":1,"message":"","result":{"send":true,"content":"\u5c0a\u656c\u7684\u7528\u6237\uff0c\u8bf7\u8f93\u5165\u624b\u673a\u52a8\u6001\u9a8c\u8bc1\u7801[828647]\uff0c\u6709\u6548\u671f120\u79d2\u3002\u3010\u5929\u6613\u4e92\u5a31\u3011"}}
+0
+
+GET /openapi/index.php?r=user/binding&s=%2FADM3H1%2Bgmvd%2Bp4HXqZhSFziO%2FYjBhdkY%2FmELVgfu6BLIalb10T7qi%2BccBjo+CpPgLZyVTW7IZ5Y0l40ykGhvWHmt%2BLRuN%2F1BcKYvSDFeEGHcA0QkjEGmJ4z%2B+lrJi76VmEJQZ1ise44iFc4FXFLZy0sfVDLGC4cA%2BF0fb0ps46yQ%3D&resetkey=828647&value=13724301395&access_token=GT001.GTP_1000.DF_36089.53f5bcabd5799d4c3b58b3a3c0d97b76f41d8025 HTTP/1.1
+Host: 103.20.248.170
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/UNAVAILABLE (java 1.4)
+Cookie: PHPSESSID=96fmo8k91gt4pcga9r4i4gl996
+Cookie2: $Version=1
+
+HTTP/1.1 200 OK
+Server: nginx
+Date: Wed, 20 Jan 2016 08:21:29 GMT
+Content-Type: text/html
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+X-Powered-By: PHP/5.3.29
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Access-Control-Allow-Origin: *
+
+31
+{"code":1,"message":"","result":{"binding":true}}
+0
+

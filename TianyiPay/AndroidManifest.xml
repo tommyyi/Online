@@ -1,0 +1,63 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.tianyipay">
+
+    <uses-sdk android:minSdkVersion="13"/>
+    
+  	<uses-permission android:name="android.permission.INTERNET" />
+  	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+  	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+  	<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+  	<uses-permission android:name="android.permission.CALL_PHONE"/>
+  
+    <application>
+        <activity
+            android:name="com.tianyi.ui.TianyiPaymentCenterActivity"
+            android:screenOrientation="landscape"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity
+            android:name="com.tianyi.ui.TianyiUserCenter"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity
+            android:name="com.tianyi.ui.TianyiBindphoneActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity
+            android:name="com.tianyi.ui.TianyiUnBindphoneActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity
+            android:name="com.tianyi.ui.TianyiChangePasswordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity
+            android:name="com.tianyi.ui.TianyiLoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity
+            android:name="com.tianyi.ui.TianyiPaymentHistoryActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity
+            android:name="com.tianyi.ui.TianyiRegisterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity
+            android:name="com.tianyi.ui.TianyiResetPasswordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity
+            android:name="com.tianyi.ui.TianyiCardpayActivity"
+            android:screenOrientation="landscape"
+            android:configChanges="orientation"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity
+            android:name="com.tianyi.floatview.CustomerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity
+            android:name="com.tianyi.floatview.WebViewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+    </application>
+</manifest>

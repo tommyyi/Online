@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_horizontal|center_vertical"
+    android:background="@color/tianyi_background_activity"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/tianyi_titlebar_height_50dp"
+        android:background="@color/tianyi_background_activity_title" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:id="@+id/goback"
+                android:layout_width="@dimen/tianyi_titlebar_height_50dp"
+                android:layout_height="@dimen/tianyi_titlebar_height_50dp"
+                android:background="@null"
+                android:src="@drawable/tianyi_title_bar_back"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxEms="10"
+                android:singleLine="true"
+                android:text="@string/tianyi_payment_history"
+                android:textColor="@color/tianyi_text_activity_title"
+                android:textSize="@dimen/tianyi_text_activity_title" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/paylist_listview_l"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <ListView
+            android:id="@+id/payment_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f0f0f0"
+            android:cacheColorHint="#00000000"
+            android:clipToPadding="false"
+            android:divider="@null"
+            android:dividerHeight="1px"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="true"
+            android:listSelector="@color/tianyi_transparent"
+            android:padding="3dp"
+            android:scrollbars="none" >
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tianyi_more_pay_record"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="7dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center_vertical|center_horizontal|center"
+            android:orientation="horizontal" >
+
+            <ProgressBar
+                android:id="@+id/pb"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="0dp"
+                android:indeterminateDrawable="@drawable/tianyi_progressbar"
+                android:keepScreenOn="true"
+                android:secondaryProgress="0"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/attention"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="正在为您加载加载支付记录..."
+                android:textColor="#68655b"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,23 @@
+GET /openapi/index.php?r=order/create&player_name=soldier&server_name=server1&amount=0.01&s=%2FADM3H1%2Bgmvd%2Bp4HXqZhSFziO%2FYjBhdkY%2FmELVgfu6BLIalb10T7qi%2BccBjo+CpPgLZyVTW7IZ5Y0l40ykGhvWHmt%2BLRuN%2F1BcKYvSDFeEGHcA0QkjEGmJ4z%2B+lrJi76VmEJQZ1ise44iFc4FXFLZy0sfVDLGC4cA%2BF0fb0ps46yQ%3D&remark=remark&extend=extend&product_name=30%E5%85%83%E5%AE%9D&notify_url=http%3A%2F%2Fwww.baidu.com&code=000000009&access_token=GT001.GTP_1000.DF_36089.2d9dc8dec0ed0a1d0328472a41e281736a8cb2e2&payment_type=alipayquick HTTP/1.1
+Host: 103.20.248.170
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/UNAVAILABLE (java 1.4)
+Cookie: PHPSESSID=rlki61d4ko6evlt74ojme5u7n6
+Cookie2: $Version=1
+
+HTTP/1.1 200 OK
+Server: nginx
+Date: Thu, 28 Jan 2016 02:35:09 GMT
+Content-Type: text/html
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+X-Powered-By: PHP/5.3.29
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Access-Control-Allow-Origin: *
+
+1aa
+{"code":1,"message":"","result":{"order_code":"56a97e5db277d","amount":0.01,"game_id":"GT001","package_id":"GTP_1000","uid":"DF_36089","server_name":"server1","player_name":"soldier","product_name":"30\u5143\u5b9d","payment_support":"alipayweb,alipayquick,tenpay,unionpay,hongbao","payment_type":"alipayquick","payment_amount":"0.0000","payment_status":0,"payment_data":"","shipping_time":null,"shipping_status":0,"status":1}}
+0

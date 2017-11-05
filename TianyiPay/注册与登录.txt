@@ -1,0 +1,48 @@
+GET /openapi/index.php?r=user/register&s=%2FADM3H1%2Bgmvd%2Bp4HXqZhSFziO%2FYjBhdkY%2FmELVgfu6BLIalb10T7qi%2BccBjo+CpPgLZyVTW7IZ5Y0l40ykGhvWHmt%2BLRuN%2F1BcKYvSDFeEGHcA0QkjEGmJ4z%2B+lrJi76VmEJQZ1ise44iFc4FXFLZy0sfVDLGC4cA%2BF0fb0ps46yQ%3D&password=ghjjkhh&username=t60202491894 HTTP/1.1
+Host: 103.20.248.170
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/UNAVAILABLE (java 1.4)
+Cookie: PHPSESSID=96fmo8k91gt4pcga9r4i4gl996
+Cookie2: $Version=1
+
+HTTP/1.1 200 OK
+Server: nginx
+Date: Wed, 20 Jan 2016 06:48:03 GMT
+Content-Type: text/html
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+X-Powered-By: PHP/5.3.29
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Access-Control-Allow-Origin: *
+
+b7
+{"code":1,"message":"","result":{"user_id":"36071","name":"t60202491894","nickname":"","avatar":"","register_time":"2016-01-20 14:48:03","phone":false,"email":false,"uid":"DF_36088"}}
+0
+
+GET /openapi/index.php?r=auth/authorize&s=%2FADM3H1%2Bgmvd%2Bp4HXqZhSFziO%2FYjBhdkY%2FmELVgfu6BLIalb10T7qi%2BccBjo+CpPgLZyVTW7IZ5Y0l40ykGhvWHmt%2BLRuN%2F1BcKYvSDFeEGHcA0QkjEGmJ4z%2B+lrJi76VmEJQZ1ise44iFc4FXFLZy0sfVDLGC4cA%2BF0fb0ps46yQ%3D&password=ghjjkhh&username=t60202491894 HTTP/1.1
+Host: 103.20.248.170
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/UNAVAILABLE (java 1.4)
+Cookie: PHPSESSID=96fmo8k91gt4pcga9r4i4gl996
+Cookie2: $Version=1
+
+HTTP/1.1 200 OK
+Server: nginx
+Date: Wed, 20 Jan 2016 06:48:04 GMT
+Content-Type: text/html
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+X-Powered-By: PHP/5.3.29
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Access-Control-Allow-Origin: *
+
+d0
+{"code":1,"message":"","result":{"access_token":"GT001.GTP_1000.DF_36088.9ae3b98d5b6c282e525abb21a06df85acd7c8bef","expire_time":"2016-01-21 14:48:04","uid":"DF_36088","username":"t60202491894","phone":null}}
+0
+

@@ -1,0 +1,10 @@
+package com.tianyi.alipay;
+
+public class PartnerConfig {
+	  public static final String ALIPAY_PLUGIN_NAME = "alipay_plugin_20120428msp.apk";
+	  public static final String PARTNER = "2088611939528811";
+	  public static final String RSA_ALIPAY_PUBLIC = "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCnxj/9qwVfgoUh/y2W89L6BkRAFljhNhgPdyPuBV64bfQNN1PjbCzkIM6qRdKBoLPXmKKMiFYnkd6rAoprih3/PrQEB/VsW8OoM8fxn67UDYuyBTqA23MML9q1+ilIZwBC2AQ2UBVOrFXfFl75p6/B5KsiNG9zpgmLCUYuLkxpLQIDAQAB";
+	  public static final String RSA_PRIVATE = "MIICdgIBADANBgkqhkiG9w0BAQEFAASCAmAwggJcAgEAAoGBANbTFi/UkgNFlInEp7l2jv5DwJ87Mh/2/x/jOCvZI6QjnOMAJE2v2mSx5mqyS/2UsTK5sVJ2yRuLTPBrwL3rZI5YSsGbqVFqMXSXWapgJtZPpQbUgFiwFbHM1cd/Ld/m+ulPVPAV11BWJl+9zJimUnaKYpjspEqELUFoPWV5bCwfAgMBAAECgYBQJEV1qIakQ9PrJXsw3ELyJlJ41LuZYyrAOaMd8I60UDjaEpZ4iO8fe6KrEUL6IfuNIes+CWRzKx+T3Y71CxjitoCWhdZFoka6EbcSz+4rMdg6k9rhFmCXsGwxHlbomjpnasWCW63aNBqFxYaeeUOrRtcYPAYuET76DYqkZL7p8QJBAPPGfGm2T5F0b6AZgtgnNjBp3PCUEbIj2HZy+jL/qgV+egSDYwzc28sDQktP4G5yQgrQiFGlpqX2P+BXX8qHv6kCQQDhmPB4u9z5KZ5hBl8EDnYU6bevSBXvBvfD7rTv3q9/V+qYIrK0+sVGDcmQuQKlUJpqX7McU0udqX2FNfJBfYqHAkEAg6VtCqmpzqNSpOMiBhkm6n5BEqrj44/4Ff+BnojzCISE4GsT0p5zE+9unb1FNl/9yllTRMRweq/BTyXgVT96AQJAUS+58qkg9+YbYi1pykruAc6uVP0rL48hYTipkt1f6QMZoNBz4Z+RmQljLZr3MckVGQ0Bp0LupnmVe3gTi7ADRwJALxly6Ooj0H4HDQ9u5R/YM+kxiZ1khN/m1GqXC2b2kZuSx2oxGl1HhImzX2I4X+KpCOJj+8tu4lziDkeitYztAQ==";
+	  public static final String SELLER = "tomy_yi@1997game.com";
+	  public static final String NOTIFYURL = "http://103.20.248.170/openapi/payment/alipay/notify.php";
+}

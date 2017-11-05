@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tianyi_background_activity"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/tianyi_auto_register_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/tianyi_btn_ok"
+        android:text="一键注册/登录"
+        android:textColor="@color/tianyi_white"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/tianyi_notice_bind_phone"
+        android:textColor="@color/tianyi_white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/tianyi_btn_ok"
+        android:text="提示绑定手机"
+        android:textSize="20sp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/tianyi_usercenter_landscape"
+        android:textColor="@color/tianyi_white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/tianyi_btn_ok"
+        android:text="账号管理(横版)"
+        android:textSize="20sp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/tianyi_usercenter_portrait"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/tianyi_btn_ok"
+        android:text="账号管理(竖版)"
+        android:textColor="@color/tianyi_white"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/amount"
+            style="@style/tianyi_edittext_style"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/tianyi_editbox_background"
+            android:hint="@string/tianyi_test_amount_hint"
+            android:inputType="none"
+            android:singleLine="true"
+            android:text="@string/tianyi_test_amount" >
+
+        </EditText>
+
+        <Button
+            android:id="@+id/tianyi_paytest"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/tianyi_btn_ok"
+            android:text="游戏订单支付"
+            android:textColor="@color/tianyi_white"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+</LinearLayout>
