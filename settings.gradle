@@ -1,14 +1,14 @@
+include ':commonlibrary'
+project(':commonlibrary').projectDir = new File('F:\\TomyAndroidProject\\Online\\commonlibrary')
 include ':Alipay'
-project(':Alipay').projectDir = new File('D:/CODE/Online/Alipay')
-include ':UPPay'
-project(':UPPay').projectDir = new File('D:/CODE/Online/UPPay')
-include ':WeiXinPay'
-project(':WeiXinPay').projectDir = new File('D:\\CODE\\Online\\WeChatPay')
+project(':Alipay').projectDir = new File('F:\\TomyAndroidProject\\Online\\Alipay')
+//include ':UPPay'
+//project(':UPPay').projectDir = new File('F:\\TomyAndroidProject\\Online\\UPPay')
+include ':WeChatPay'
+project(':WeChatPay').projectDir = new File('F:\\TomyAndroidProject\\Online\\WeChatPay')
 include ':TianyiPay'
-project(':TianyiPay').projectDir = new File('D:/CODE/Online/TianyiPay')
+project(':TianyiPay').projectDir = new File('F:\\TomyAndroidProject\\Online\\TianyiPay')
 include ':TianyiPayLib'
-project(':TianyiPayLib').projectDir = new File('D:/CODE/Online/TianyiPayLib')
+project(':TianyiPayLib').projectDir = new File('F:\\TomyAndroidProject\\Online\\TianyiPayLib')
 include ':TianyiPayDemo'
-project(':TianyiPayDemo').projectDir = new File('D:/CODE/Online/TianyiPayDemo')
-include ':TianyiPayDoc'
-project(':TianyiPayDoc').projectDir = new File('D:/CODE/Online/TianyiPayDoc')
+project(':TianyiPayDemo').projectDir = new File('F:\\TomyAndroidProject\\Online\\TianyiPayDemo')

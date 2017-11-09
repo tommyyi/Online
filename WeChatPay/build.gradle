@@ -1,8 +1,8 @@
 apply plugin: 'com.android.library'
 
+apply from: project(':commonlibrary').projectDir.absolutePath +"/common.gradle"
+
 android {
-    compileSdkVersion 17
-    buildToolsVersion "23.0.3"
 
     sourceSets {
         main {
@@ -27,10 +27,6 @@ android {
         // by a similar customization.
         debug.setRoot('build-types/debug')
         release.setRoot('build-types/release')
-    }
-
-    defaultConfig {
-        targetSdkVersion 23
     }
 
     buildTypes {

@@ -1,15 +1,15 @@
 apply plugin: 'com.android.library'
 
+apply from: project(':commonlibrary').projectDir.absolutePath +"/common.gradle"
+
 dependencies {
     compile fileTree(dir: 'libs', include: '*.jar')
     compile project(':Alipay')
 //    compile project(':UPPay')
-    compile project(':WeiXinPay')
+    compile project(':WeChatPay')
 }
 
 android {
-    compileSdkVersion 17
-    buildToolsVersion "23.0.3"
 
     sourceSets {
         main {

@@ -1,12 +1,12 @@
 apply plugin: 'com.android.library'
 
+apply from: project(':commonlibrary').projectDir.absolutePath +"/common.gradle"
+
 dependencies {
     compile fileTree(include: '*.jar', dir: 'libs')
 }
 
 android {
-    compileSdkVersion 17
-    buildToolsVersion '23.0.3'
 
     sourceSets {
         main {
