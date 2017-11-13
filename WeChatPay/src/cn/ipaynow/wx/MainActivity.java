@@ -62,7 +62,7 @@ public class MainActivity extends Activity
 
             }
         };
-        mWeChatPayManager.pay(mhtOrderNo, mhtOrderBeginTime, orderName, orderDetail, amount, reserved, tianyiWeChatPayCallback);
+        mWeChatPayManager.pay(mhtOrderNo, orderName, orderDetail, amount, mhtOrderBeginTime, "456123", "yuyang", reserved, tianyiWeChatPayCallback);
     }
 
     @Override

@@ -31,24 +31,26 @@ public class WeChatPayManager
 
     /**
      * 处理支付事件
-     * @param mhtOrderNo
+     * @param orderNoMht
      * @param orderName
      * @param orderDetail
-     * @param amount
+     * @param orderBeginTime
+     * @param consumerId
+     * @param consumerName
      * @param reserved
      * @param tianyiWeChatPayCallback
      */
-    public void pay(String mhtOrderNo, String mhtOrderBeginTime, String orderName, String orderDetail, String amount, String reserved, TianyiWeChatPayCallback tianyiWeChatPayCallback)
+    public void pay(String orderNoMht, String orderName, String orderDetail, String orderAmount, String orderBeginTime, String consumerId, String consumerName, String reserved, TianyiWeChatPayCallback tianyiWeChatPayCallback)
     {
         ConnectivityManager manager = (ConnectivityManager) mContext.getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo networkInfo = manager.getActiveNetworkInfo();
-        if (weChatIsNotOk(orderDetail, amount, networkInfo))
+        if (weChatIsNotOk(orderDetail, orderAmount, networkInfo))
             return;
 
         // 创建订单列表
         String appId = Constant.mAppID;
         String notifyUrl = Constant.notifyUrl;
-        PreSignMessageUtil signUtil = prePayMessage(mhtOrderNo, mhtOrderBeginTime, appId, orderName, amount, orderDetail, reserved, notifyUrl);
+        PreSignMessageUtil signUtil = prePayMessage(orderNoMht, orderBeginTime, appId, orderName, orderAmount, orderDetail, reserved, notifyUrl, consumerId, consumerName);
         loading.setLoadingMsg("创建订单...");
         loading.show();
 
@@ -88,8 +90,10 @@ public class WeChatPayManager
      * @param orderDetail
      * @param reserved
      * @param notifyUrl
+     * @param consumerId
+     * @param consumerName
      */
-    private PreSignMessageUtil prePayMessage(String mhtOrderNo, String mhtOrderStartTime, String appid, String orderName, String orderAmount, String orderDetail, String reserved, String notifyUrl)
+    private PreSignMessageUtil prePayMessage(String mhtOrderNo, String mhtOrderStartTime, String appid, String orderName, String orderAmount, String orderDetail, String reserved, String notifyUrl, String consumerId, String consumerName)
     {
         PreSignMessageUtil preSignMessageUtil = new PreSignMessageUtil();//待签名串生成工具
         preSignMessageUtil.appId = appid;
@@ -105,8 +109,8 @@ public class WeChatPayManager
         preSignMessageUtil.mhtOrderTimeOut = "3600";
         preSignMessageUtil.mhtCharset = "UTF-8";
         preSignMessageUtil.payChannelType = "13";
-        preSignMessageUtil.consumerId = "456123";
-        preSignMessageUtil.consumerName = "yuyang";
+        preSignMessageUtil.consumerId = consumerId;
+        preSignMessageUtil.consumerName = consumerName;
         preSignMessageUtil.mhtLimitPay = "no_credit";
 
         return preSignMessageUtil;

@@ -1,7 +1,6 @@
 package com.tianyi.ui;
 
 import android.app.Activity;
-import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
@@ -421,7 +420,7 @@ public class TianyiPaymentCenterActivity extends Activity
                                     String orderDetail = TianyiPaymentCenterActivity.this.remark;
                                     String amount = localAmount;
                                     String reserved = "";
-                                    mWeChatPayManager.pay(mhtOrderNo, mhtOrderBeginTime, orderName, orderDetail, amount, reserved, tianyiWeChatPayCallback);
+                                    mWeChatPayManager.pay(mhtOrderNo, orderName, orderDetail, amount, mhtOrderBeginTime, cpOrderID, product_name, reserved, tianyiWeChatPayCallback);
                                 }
                             });
                         }
